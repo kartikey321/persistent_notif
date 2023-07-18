@@ -7,7 +7,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize the MethodChannel before calling runApp
-  const platform = MethodChannel('your_channel_name');
+  const platform = MethodChannel('com.example.persistent_notif/channel');
   platform.setMethodCallHandler(_handleMethod);
 
   runApp(const MyApp());

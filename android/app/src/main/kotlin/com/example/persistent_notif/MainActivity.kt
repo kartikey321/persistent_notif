@@ -9,7 +9,7 @@ class MainActivity : FlutterActivity() {
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         GeneratedPluginRegistrant.registerWith(flutterEngine)
 
-        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "your_channel_name")
+        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "com.example.persistent_notif/channel")
             .setMethodCallHandler { call, result ->
                 if (call.method == "showPermanentNotification") {
                     // Call the method to create a permanent notification

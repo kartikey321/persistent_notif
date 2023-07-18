@@ -2,7 +2,7 @@ import 'package:flutter/services.dart';
 
 class NotificationChannel {
   static const MethodChannel _channel =
-      const MethodChannel('your_channel_name');
+      const MethodChannel('com.example.persistent_notif/channel');
 
   Future<void> showCustomNotification() async {
     try {
